@@ -1,0 +1,123 @@
+body{
+    font-family: "DM Sans", sans-serif;
+    font-size: medium;
+    background-color: #EBF3E8;
+  }
+  .flex-container{
+    display:flex;
+    flex-wrap: wrap;
+   align-items: stretch;
+    
+  }
+  
+  .sidebar {
+    height: 80%;
+    width: 60px;
+    position: fixed;
+    left: 10px;
+    padding-top: 40px;
+    background-color:#C3E2C2;
+    border-radius:50px;
+  }
+  .sidebar a {
+    padding: 15px;
+    font-size: 25px;
+    display: block;
+    text-decoration: none;
+    color:#163020;
+    transition: 500ms;
+    padding-top: 0;
+  }
+  .sidebar a:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 500ms;
+  }
+  .sidebar i p {
+    font-size: x-small;
+    font-weight:bold;
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+  }
+  .body-text {
+    margin-left: 80px;
+    font-size: 18px;
+  }
+  svg {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    padding-top: 40px;
+  }
+ 
+  polyline {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s ease-in forwards;
+    animation-iteration-count: 10;
+    animation-direction: alternate;
+  }
+  @keyframes dash{
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+.nav-flex-container{
+  display:flex;
+    flex-wrap: wrap;
+   align-items: stretch;
+   align-items: baseline;
+align-items: center;
+background-color: #ffffff;
+}
+
+/* progress bar */
+@keyframes progress {
+  0% { --percentage: 0; }
+  100% { --percentage: var(--value); }
+}
+
+@property --percentage {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
+
+[role="progressbar"] {
+  --percentage: var(--value);
+  --primary:#588157;
+  --secondary: #a3b18a;
+  --size: 150px;
+  animation: progress 2s 0.5s forwards;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+[role="progressbar"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(var(--primary) calc(var(--percentage) * 1%), var(--secondary) 0);
+  mask: radial-gradient(white 55%, transparent 0);
+  mask-mode: alpha;
+  -webkit-mask: radial-gradient(#0000 55%, #000 0);
+  -webkit-mask-mode: alpha;
+  
+}
+
+[role="progressbar"]::after {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) '%';
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--primary);
+}

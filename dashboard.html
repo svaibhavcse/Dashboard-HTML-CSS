@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://thumbs.dreamstime.com/b/foodies-typography-logo-premium-vector-template-166371770.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href = "dashboardStyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <title>Foodies- Dashboard</title>
+</head>
+<body>
+  <header>
+ 
+    <div class="nav-flex-container">
+        <div  style="flex-grow: 0">
+      <img src="https://thumbs.dreamstime.com/b/foodies-typography-logo-premium-vector-template-166371770.jpg" style ="width: 100px;"></div>
+      <div  style="flex-grow: 8"><a class="navbar-brand" style="font-weight: bold;">Dashboard<br><span style = "font-size:10px;font-weight: 500;">Monday 29 Jan,2024</span></a></div>
+        <div  style="flex-grow: 0"><input style="width: 200px;font-size: x-small;border-radius: 50px;" class="form-control me-2" type="search" placeholder="Search Resturant, food or more" aria-label="Search"></div><div style="flex-grow: 0;"><i class="bi bi-search"></i></div>
+    </div>
+ 
+</header>
+<!-- sidebar -->
+  <div class="sidebar">
+    <nav>
+      <a href="#"><i class="bi bi-house-door-fill"><p >Home</p></i></a>
+      <a href="#"><i class="bi bi-sliders"><p>Edit</p></i></a>
+      <a href="#"><i class="bi bi-clock-history"><p >History</p></i></a>
+      <a href="#"><i class="bi bi-cart-dash-fill"><p >Cart</p></i></a>
+      <a href="#"><i class="bi bi-gear-fill"><p >Settings</p></i></a>
+      <a href="#"><i class="bi bi-people-fill"><p >Account</p></i></a>
+    </nav>
+    </div>
+    <div class="body-text">
+      <!-- body content -->
+
+ <!-- page content -->
+ <div class="flex-container">
+ <div class="flex-container">
+  <div class="row">
+    <div class="col-6 col-sm-6">
+      <p>Orders</p>
+      <h3>76</h3>
+    </div>
+    <div class="col-6 col-sm-6">
+      <p>Revenue</p>
+      <h3>56,989</h3>
+    </div>
+    <div class="row"></div>
+    <div class="col-6 col-sm-6">
+      <p>Dine-In</p>
+      <h3>17</h3>
+    </div>
+    <div class="col-6 col-sm-6">
+      <p>Take Away</p>
+      <h3>59</h3>
+    </div>
+  </div>
+</div>
+<div>
+    <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="--value: 70"></div>
+<p style="padding-left:50px ;">Sold</p>
+</div>
+</div>
+<br>
+<!-- graph -->
+<div class="graph-container">
+  <p class="title"style="font-weight: bold;">Today's Sale</p>
+      <svg class='container-fluid' width="529px" height="286px" viewBox="30 27 529 286" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="graph-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(30.000000, 27.000000)">
+              <g id="y_axis" font-size="11.0833333" font-family=".HelveticaNeueDeskInterface-Regular, .Helvetica Neue DeskInterface" fill="#000000"  font-weight="bold">
+                  <text id="0">
+                      <tspan x="25.3008249" y="264.333333">0</tspan>
+                  </text>
+                  <text id="200">
+                      <tspan x="12.7757572" y="232.666667">50-100</tspan>
+                  </text>
+                  <text id="400">
+                      <tspan x="12.7757572" y="201">101-200</tspan>
+                  </text>
+                  <text id="600">
+                      <tspan x="12.7757572" y="169.333333">201-300</tspan>
+                  </text>
+                  <text id="800">
+                      <tspan x="12.7757572" y="137.666667">301-400</tspan>
+                  </text>
+                  <text id="1000">
+                      <tspan x="6.51322328" y="106">401-500</tspan>
+                  </text>
+                  <text id="1200">
+                      <tspan x="6.51322328" y="74.3333333">501-600</tspan>
+                  </text>
+                  <text id="1400">
+                      <tspan x="6.51322328" y="42.6666667">601-700</tspan>
+                  </text>
+                  <text id="1600">
+                      <tspan x="6.51322328" y="11">>700</tspan>
+                  </text>
+              </g>
+              <g id="GRAPHS" transform="translate(64.000000, 16.000000)" stroke-linecap="round" stroke-width="8" stroke-linejoin="round">
+                  <polyline id="Banks" stroke="#D24545" points="0 1 88.0438662 1 128.985782 137 180.170616 137 224.189573 182 256.947867 91 301.990521 137 346.009479 91 392.087202 91 429.952607 179"></polyline>
+                  <polyline id="Bridge" stroke="#994D1C" points="2.04739336 183 54.2559242 227 96.2274882 47 133.080569 1 302.018438 1 346.680361 44.6280822 386.957346 0 427.905213 43"></polyline>
+                  <polyline id="PayPal" stroke="#304D30" points="2.04739336 180 53.273159 180 99.2985782 91 137.175355 47 219.077488 47 256.947867 90 301.990521 47 349.080569 137 398.228672 137 432 91"></polyline>
+              </g>
+              <g id="x_axis" transform="translate(71.974046, 271.541667)" font-size="11.0833333" font-family=".HelveticaNeueDeskInterface-Regular, .Helvetica Neue DeskInterface" fill="#000000" font-weight="bold">
+                  <text id="1">
+                      <tspan x="0.396183206" y="11">8 AM</tspan>
+                  </text>
+                  <text id="2">
+                      <tspan x="39.2603361" y="11">9 AM</tspan>
+                  </text>
+                  <text id="3">
+                      <tspan x="78.8786567" y="11">10 AM</tspan>
+                  </text>
+                  <text id="4">
+                      <tspan x="118.496977" y="11">11 AM</tspan>
+                  </text>
+                  <text id="5">
+                      <tspan x="158.115298" y="11">12 PM</tspan>
+                  </text>
+                  <text id="6">
+                      <tspan x="197.733619" y="11">1 PM</tspan>
+                  </text>
+                  <text id="7">
+                      <tspan x="237.351939" y="11">2 PM</tspan>
+                  </text>
+                  <text id="8">
+                      <tspan x="276.97026" y="11">3 PM</tspan>
+                  </text>
+                  <text id="9">
+                      <tspan x="316.58858" y="11">4 PM -</tspan>
+                  </text>
+                  <text id="10">
+                      <tspan x="359.229833" y="11">8 PM</tspan>
+                  </text>
+                  <text id="11">
+                      <tspan x="400.036703" y="11">9 PM</tspan>
+                  </text>
+                  <text id="12">
+                      <tspan x="438.466474" y="11">10 PM</tspan>
+                  </text>
+              </g>
+              <g id="grid" transform="translate(46.618321, 4.750000)" stroke="#000000" stroke-linecap="square" opacity="0.0800000057">
+                  <path d="M0.396183206,1.1875 L478.991396,1.1875" id="Line"></path>
+                  <path d="M0.396183206,32.8541667 L478.991396,32.8541667" id="Line"></path>
+                  <path d="M0.396183206,64.5208333 L478.991396,64.5208333" id="Line"></path>
+                  <path d="M0.396183206,96.1875 L478.991396,96.1875" id="Line"></path>
+                  <path d="M0.396183206,127.854167 L478.991396,127.854167" id="Line"></path>
+                  <path d="M0.396183206,159.520833 L478.991396,159.520833" id="Line"></path>
+                  <path d="M0.396183206,191.1875 L478.991396,191.1875" id="Line"></path>
+                  <path d="M0.396183206,222.854167 L478.991396,222.854167" id="Line"></path>
+                  <path d="M0.396183206,254.520833 L478.991396,254.520833" id="Line"></path>
+              </g>
+          </g>
+      </svg>
+    </div>
+<br>
+<!-- current order details -->
+<div class="container-fluid"> 
+<p style="font-weight: bold;">Current Details</p>
+<hr>
+<div class="flex-container">
+  <div style="flex-grow: 1">
+       <img src="https://www.punekarnews.in/wp-content/uploads/2020/03/swiggy.jpg" alt="" style="height: 48px;"> 
+  </div>
+  <div style="flex-grow: 1">
+      <p style="font-weight: bold;"> Order ID #384645246864</p>
+      <p>28 Jan,2024 12:03 PM</p>
+  </div>
+  <div style="flex-grow: 1">
+    <p style="font-weight: bold;"> Rubin</p>
+    <p>Total Amount: Rs 809</p>
+</div>
+<div style="flex-grow: 1">
+  <p style="font-weight: bold;">Paid</p>
+  <p>Online Payment</p>
+</div>
+<div style="flex-grow: 1">
+<button type="button" class="btn btn-success">Mark as Picked-Up</button>
+</div>
+</div>
+
+<div class="flex-container">
+<div style="flex-grow: 1">
+ <img src="https://www.codingninjas.com/careercamp/wp-content/uploads/2021/09/Zomato-logo-e1632471844744-1024x269.png" alt="" style="height: 30px;"> 
+</div>
+<div style="flex-grow: 1">
+<p style="font-weight: bold;"> Order ID #7428678346751</p>
+<p>28 Jan,2024 01:03 PM</p>
+</div>
+<div style="flex-grow: 1">
+<p style="font-weight: bold;"> Mithun</p>
+<p>Total Amount: Rs 267</p>
+</div>
+<div style="flex-grow: 1">
+<p style="font-weight: bold;">Paid</p>
+<p>Online Payment</p>
+</div>
+<div style="flex-grow: 1">
+<button type="button" class="btn btn-success">Mark as Preparing</button>
+</div>
+</div>
+<div class="flex-container">
+<div style="flex-grow: 1">
+ <img src="https://www.punekarnews.in/wp-content/uploads/2020/03/swiggy.jpg" alt="" style="height: 48px;"> 
+</div>
+<div style="flex-grow: 1">
+<p style="font-weight: bold;"> Order ID #8765904321894</p>
+<p>28 Jan,2024 01:03 PM</p>
+</div>
+<div style="flex-grow: 1">
+<p style="font-weight: bold;"> Abishek</p>
+<p>Total Amount: Rs 3490</p>
+</div>
+<div style="flex-grow: 1">
+<p style="font-weight: bold;">Pending</p>
+<p>Cash on Delivery</p>
+</div>
+<div style="flex-grow: 1">
+<button type="button" class="btn btn-success">Mark as Picked-Up</button>
+</div>
+</div>
+</div>
+<!-- out of stock -->
+<div class = "container-fluid">
+  <div class="row">
+<div class="col-6">
+<p style="font-weight: bold;">Favourite Dishes</p>
+<hr>
+ <img src="https://biryanibowlwa.com/wp-content/uploads/2021/04/Butter-Chicken-Curry-1.jpg" style="height: 50px;border-radius: 25%;"> <span style="font-weight:600;">Butter Chicken </span> &ensp; Orders : 87
+<br> <br>
+ <img src="https://th.bing.com/th/id/OIP.r6T2zRnyrrP8LdtOEaGVowHaGl?rs=1&pid=ImgDetMain" style="height: 50px;border-radius: 25%;"> <span style="font-weight:600;">Chicken Briyani</span> &ensp; Orders : 80
+ <br> <br>
+ <img src="https://media.self.com/photos/606ccf537369ccb45ca42214/4:3/w_2560%2Cc_limit/DiGiorno-Gluten-Free-Pizza-Pepperoni.jpg" style="height: 40px;border-radius: 25%;"> <span style="font-weight:600;">Pizza</span> &ensp; Orders : 65
+</div>
+<div class="col-6">
+<p style="font-weight: bold;">Out of Stock</p>
+<hr>
+
+<img src="https://www.cubesnjuliennes.com/wp-content/uploads/2021/03/Best-Mutton-Biryani-Recipe.jpg" style="height: 50px;border-radius: 25%;"> <span style="font-weight:600;">Mutton Briyani </span> &ensp; Availability: Tomorrow 
+<br> <br>
+<img src="https://www.simplyrecipes.com/thmb/nHwZk5pKaCOn591969BaF36eHJc=/5184x3456/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Grilling-Chicken-Guide-LEAD-5-8f4cf34238fd44db87e181192f19990b.jpg" style="height: 40px;border-radius: 25%;"> <span style="font-weight:600;">Chicken Grill</span> &ensp; Availability: 06:00 PM
+
+<br> <br>
+<img src="https://th.bing.com/th/id/OIP.0GdTSfr1tFAY1xVoraAX6wHaF6?rs=1&pid=ImgDetMain" style="height: 50px;border-radius: 25%;"> <span style="font-weight:600;">chicken Tandoori</span> &ensp; Availability: Tomorrow
+</div>
+</div>
+</div>
+
+    </div>
+    
+     
+
+</body>
+</html>
